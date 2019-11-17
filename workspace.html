@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="./src/work.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" class="logo">
+                    <h3>C{}DE&copy;</h3>
+                </a>
+            </div>
+            <a href="index-blog.html">Blog Post</a>
+            <a href="log-in.html" class="log-in">Log In</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-item1">
+                <div><img src="./src/images/workspace.JPG" alt="soryy"></div>
+                <h1>Artsrun Petrosyan</h1>
+                <button type="button" class="button1" id="myBtn"> Create New Post</button>
+            </div>
+            <div class="container-item2">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <div id="myModal" class="modal">
+        <form class="modal-content animate" method="post">
+            <div>
+                <span class="close">&times;</span>
+            </div>
+            <div class="post-container">
+                <div class="div1">
+                    <p>Title</p>
+                    <input type="text" required>
+                </div>
+                <div class="div2">
+                    <p>Post<p>
+                   <input type="text" required>
+                </div>
+                
+                <button type="submit">Create Post</button> 
+            </div>
+        </form>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal"); 
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+
+    background: url(./images/code.jpg);
+    background-size: cover;
+}
+
+header {
+    width:all;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(48, 59, 59, 0.897);
+  }
+  header nav a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size:20px;
+    margin-right: 4em;
+}
+.logo{
+  position:absolute;
+  left: 6%;
+  transition: 1s;
+}
+.logo:hover{
+  font-size: 21px;
+}
+  header nav a:hover{
+    color: lightslategrey;
+}
+
+main {
+    width: all;
+    margin-top: 3%;
+    background: rgba(48, 59, 59, 0.897);
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+}
+
+.container-item1 {
+    height: 20vh;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.616);
+    transition: box-shadow 0.2s ease-in-out;
+
+}
+.container-item1:hover {
+    box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.774);
+  }
+  .container-item1 div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .container-item1 div img {
+      width: 7em;
+      height: 7em;
+      border-radius: 50%;
+      border:solid 1.5px  blanchedalmond;
+      box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.616);
+      transition: 1s;
+  }
+
+  .container-item1 div img:hover{
+    width: 7.5em;
+    height: 7.5em;
+    border:solid 2px  lightslategrey;
+  }
+  .container-item1 h1 {
+      color: blanchedalmond;
+      margin:-6% 0 0 18%;
+  }
+  .button1{
+    margin-left:85%;
+    margin-top: -20px;
+    color: rgb(228, 224, 178);
+    background: rgb(85, 90, 69);
+    border: none;
+    cursor: pointer;
+    margin-right: 4em;
+    padding:1% 1%;
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 8px 3px 0 rgba(0, 0, 0, 0.616);
+  }
+  .button1:hover{
+      background: rgba(85, 90, 69, 0.603);
+  }
+  .container-item2 {
+      margin-top: 2%;
+      height: 60vh;
+  }
+  .container-item2 div {
+    height: 4em;
+    margin-top:2%;
+    border: 2px rgba(85, 90, 69, 0.603)solid;
+      
+  }
+
+
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  
+  .modal-content {
+    background-color: rgb(85, 90, 69);
+    margin: 7% 35%;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    width: 30vw;
+    height: 40vh;
+  }
+  .div1 {
+     margin: 7% 0 0 25%;
+  }
+  .div1,.div2 p{
+      font-size: 20px;
+      font-weight: 400;
+  }
+  .div1 input{
+    color: #fff;
+    width: 15vw;
+    height: 5vh;
+    background:rgba(61, 70, 78, 0.658);
+  }
+  .div2 input {
+    color: #fff;
+    width: 15vw;
+    height: 5vh;
+    background:rgba(61, 70, 78, 0.658);
+  }
+
+  .div2{
+      margin: 5% 0 0 25%;
+  }
+  .post-container button{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 8% 13%;
+    color: #fff;
+    width: 23vw;
+    height: 4vh;
+    background:rgba(32, 67, 99, 0.945);
+    cursor: pointer;
+  }
+  .post-container button:hover{
+    background:rgba(31, 80, 126, 0.699);
+  }
+
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
